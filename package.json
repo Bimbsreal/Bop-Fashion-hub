@@ -1,0 +1,37 @@
+{
+  "name": "bop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test --test-concurrency=1 server/test/foundation.test.ts server/test/catalog.test.ts server/test/media.test.ts server/test/design.test.ts server/test/ai.test.ts server/test/analysis.test.ts server/test/visualization.test.ts server/test/try-on.test.ts server/test/body-measurements.test.ts server/test/fit.test.ts server/test/style.test.ts server/test/commerce.test.ts server/test/commerce-form.test.ts server/test/order.test.ts server/test/order-form.test.ts server/test/payment.test.ts server/test/payment-form.test.ts server/test/session.test.ts server/test/website-form.test.ts server/test/journey-assets.test.ts",
+    "dev:api": "tsx server/src/index.ts",
+    "db:migrate": "tsx server/src/db/migrate.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "next": "16.4.0",
+    "pg": "^8.23.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
